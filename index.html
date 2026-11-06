@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-Hant"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#12231d"><title>Project Confluence｜歧路同歸 V2.5</title>
+<meta name="theme-color" content="#12231d"><title>Project Confluence｜歧路同歸 V2.6 操作修正版</title>
 <style>
 :root{--bg:#0d1c1c;--panel:#19302c;--panel2:#233d36;--stroke:#48645a;--mint:#9ed2b8;--gold:#ecd29a;--ink:#f4eedf;--muted:#bdc9be;--red:#e7ab94}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,'Noto Sans TC','Microsoft JhengHei',sans-serif;color:var(--ink);font-size:14px}button{font:inherit;cursor:pointer;border:0;touch-action:manipulation}button:disabled{opacity:.42;cursor:default}[hidden]{display:none!important}.app{height:100dvh;min-height:390px;display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(circle at 20% 0,#26473c 0,transparent 65%),#0c1b1b}.topbar{height:70px;flex-shrink:0;padding:10px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #52736569;background:#10231fc7}.brand{display:flex;align-items:center;gap:12px}.brand .mark{width:46px;height:46px;border:1px solid #dfbd7d;border-radius:12px;display:grid;place-items:center;font-family:serif;font-size:30px;color:#f5dba2;background:#294139}.brand small{display:block;color:#b5c3b7;letter-spacing:2px;font-size:9px}.brand strong{display:block;font:25px/1.25 Georgia,'Noto Serif TC',serif;color:#f2ddb0}.hud{display:flex;align-items:center;gap:9px}.chip{background:#22382f;border:1px solid #516e5e;padding:8px 12px;border-radius:9px;color:#e8e3cf;white-space:nowrap;font-size:12px}.era{color:var(--gold)}.smallchip{color:#b9dbbd}.iconbutton{width:39px;height:39px;border:1px solid #698477;border-radius:9px;background:#294439;color:#e6dbb9;font-size:20px}.main{flex:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(327px,365px);gap:13px;padding:12px 16px;min-height:0}.world{display:flex;min-width:0;min-height:0;flex-direction:column;border:1px solid #66816c;border-radius:17px;overflow:hidden;box-shadow:0 24px 60px #05130f7a;background:#203d37}.stage{position:relative;flex:1;min-height:0;background:#527d58;overflow:hidden;touch-action:none}.stage canvas{width:100%;height:100%;display:block;touch-action:none}.worldInfo{position:absolute;left:16px;top:16px;background:#142921e8;border:1px solid #c1be9473;border-radius:12px;padding:13px 15px;pointer-events:none;max-width:290px;box-shadow:0 7px 28px #0819105f}.worldInfo .worldKicker{display:block;letter-spacing:1.6px;color:#d2d5b0;font-size:8px;margin-bottom:6px}.worldInfo b{font-family:serif;display:block;font-size:22px;color:#f7e5c7}.worldInfo small{display:block;font-size:11px;color:#bdcec0;line-height:1.5}.worldPill{position:absolute;right:14px;top:17px;background:#142821e3;border:1px solid #7d9a7e;padding:7px 12px;color:#f1deac;font-size:12px;border-radius:20px;pointer-events:none}.worldFooter{height:41px;background:#152b25;display:flex;align-items:center;justify-content:space-between;padding:0 14px;color:#bbcdbb;font-size:11px;gap:12px}.liveDot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#8ce6ab;box-shadow:0 0 0 3px #83ca9a26;margin-right:3px}.footerKeys{color:#99aea0}.panel{display:flex;flex-direction:column;min-width:0;min-height:0;border:1px solid #506e5f;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#233d35,#172d29 60%);box-shadow:0 18px 50px #05160c72}.panelHead{padding:18px 18px 13px;display:flex;justify-content:space-between;align-items:center}.panelHead small{font-size:10px;letter-spacing:2px;color:#95b4a7}.panelHead h2{margin:3px 0;font:24px Georgia,'Noto Serif TC',serif;color:#f5ddb1}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:#102420;border:1px solid #506b5c;border-radius:11px;padding:4px;margin:0 12px}.tabs button{background:none;color:#bacab8;border-radius:8px;padding:10px 5px;font-size:12px}.tabs button.active{background:#54705a;color:#fff0c7;font-weight:700}.panelScroll{flex:1;min-height:0;overflow:auto;padding:15px 17px 23px;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#647966 transparent}.panelScroll p{margin:8px 0 13px;line-height:1.65}.panelBottom{padding:10px 12px;border-top:1px solid #425b4c}.panelBottom button{display:flex;justify-content:space-between;width:100%;background:#122720;color:#d5ddc8;border-radius:9px;padding:10px 12px;font-size:12px}.label{color:#9fbaa9;letter-spacing:1px;font-size:10px;text-transform:uppercase;margin:5px 0 9px}.intro{font-size:12px;color:#c7d4c7;line-height:1.65}.feature{border:1px solid #617967;background:#28443a;border-radius:12px;padding:13px;margin-bottom:13px}.feature b{color:#f5ddb0}.feature p{color:#ccdacb;font-size:12px;line-height:1.65;margin:7px 0 0}.feature.warm{background:#3d4231;border-color:#97936a}.feature.alert{background:#3b302a;border-color:#987963}.feature.success{background:#254638;border-color:#6fa18c}.metric{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #52726370;padding:9px 0;color:#c6d7c5;font-size:12px;gap:9px}.metric b{color:#f1d8a4;font-weight:700}.action{display:block;width:100%;border:1px solid #547463;border-radius:11px;background:#29463b;color:#f0f3e7;margin-bottom:8px;text-align:left;padding:11px 13px;transition:background .12s,border .12s}.action:hover:not(:disabled){background:#3b5d4c;border-color:#9bb49c}.action b{display:block;font-size:13px}.action small{display:block;color:#b9cbbc;margin-top:4px;font-size:11px;line-height:1.4}.action.primary{background:#93724d;border-color:#ccaf7e;color:#fff1d1}.action.primary small{color:#f0dbc1}.action.ghost{background:#1d352d}.action.warn{border-color:#ab8066}.cols{display:grid;grid-template-columns:1fr 1fr;gap:7px}.stat{border-radius:10px;padding:10px 10px 9px;background:#294238;border:1px solid #4d685a}.stat .statHead{display:flex;align-items:center;gap:6px;color:#ebdfbd;font-size:12px}.stat b{font-size:18px;font-weight:800;float:right}.bar{height:5px;overflow:hidden;background:#122920;border-radius:6px;margin-top:10px}.bar i{display:block;height:100%;background:#cdb27b;border-radius:6px}.skillrow{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #54716074;padding:8px 1px;color:#c3d7c9;font-size:12px}.skillrow strong{color:#dccc98}.notes{font-size:12px;color:#bdd0c0}.spotlist{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:12px}.spotlist button{padding:9px 6px;border-radius:8px;border:1px solid #567365;background:#1b352e;color:#e1d8ba;text-align:center;font-size:12px}.spotlist button.active{background:#66593f;border-color:#dec38d}.journal{border-left:2px solid #889b75;padding:4px 0 12px 12px;margin:0 0 10px;font-size:12px;color:#d9e4d4}.journal time{font-size:10px;color:#e8cd94}.tag{display:inline-flex;align-items:center;padding:4px 8px;border-radius:6px;background:#3d5140;border:1px solid #678365;color:#e6e1c1;font-size:11px;margin-right:5px;margin-bottom:5px}.closePanel{display:none}.mobileNav{display:none}.dpad{display:none}.aroundButton,.zoomButton{display:none}.toast{z-index:4;position:absolute;top:82px;left:50%;transform:translateX(-50%);padding:11px 15px;border-radius:12px;border:1px solid #bccaa8;background:#142d25f5;box-shadow:0 10px 30px #05140d9e;text-align:center;pointer-events:none;max-width:min(94%,440px);font-size:12px;color:#f6e6b9}.scrim{position:fixed;inset:0;background:#071812b9;z-index:5}.modal{position:fixed;inset:0;z-index:20;background:#071911d9;display:grid;place-items:center;padding:15px}.modalCard{position:relative;width:min(560px,100%);max-height:calc(100dvh - 35px);overflow:auto;background:linear-gradient(150deg,#304c3e,#1a302b);border:1px solid #759179;border-radius:18px;padding:26px;box-shadow:0 35px 90px #000b}.modalClose{position:absolute;right:15px;top:14px;color:#e4d7b9;background:#3a5245;padding:4px 11px;border-radius:8px;font-size:17px}.modalCard h2{font-family:Georgia,'Noto Serif TC',serif;font-weight:600;color:#f4ddb1;font-size:29px;margin:8px 28px 8px 0}.modalCard p{font-size:13px;line-height:1.75;color:#ccd9c9}.modalCard .action{margin-top:9px}.modalLead{color:#b0bfae;font-size:10px;letter-spacing:2px}.ruleList{font-size:12px;color:#bdd0c1;line-height:1.7}.meter{height:7px;background:#102c22;border-radius:8px;overflow:hidden;margin:8px 0}.meter>span{display:block;height:100%;background:#debb7c}.floating{color:#d2e4ca;font-size:11px}
@@ -20,10 +20,28 @@
 #runtimeNotice[hidden]{display:none!important}
 @media (max-width:850px){#runtimeNotice {top:36%;max-width:340px;padding:13px 15px}}
 </style>
-</head><body>
+<style>
+/* V2.6: thumbstick and actual proximity-based interaction */
+.dpad{display:none!important}
+@media(max-width:850px){.panel:not(.open){pointer-events:none}}
+.joystick{display:none;position:absolute;z-index:3;left:14px;bottom:11px;width:142px;height:154px;user-select:none;-webkit-user-select:none;touch-action:none;align-items:center;flex-direction:column;justify-content:flex-end;gap:2px;pointer-events:none}
+.joyTrack{pointer-events:auto;position:relative;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle at 50% 46%,#416657b0,#0c2a24d9);border:2px solid #c8d9b3a8;box-shadow:inset 0 3px 18px #0619129e,0 6px 22px #07150cad;touch-action:none}
+.joyGuide{position:absolute;inset:20px;border-radius:50%;border:1px dashed #c6d6b66a;pointer-events:none}
+.joyKnob{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 36% 30%,#d0dcc8,#7c9d89 70%,#506e5d);border:3px solid #ecf0d5;box-shadow:0 3px 14px #0008, inset 0 2px 6px #fff5;pointer-events:none;transition:background .12s}
+.joystick.engaged .joyKnob{background:radial-gradient(circle at 36% 30%,#fff4c5,#bca368 70%,#8d7043)}
+.joyCaption{display:block;background:#0f2923ba;border-radius:20px;color:#e5ebd5;font-size:10px;padding:2px 9px;white-space:nowrap;text-align:center}
+.aroundButton{min-width:120px;max-width:195px;min-height:44px;font-weight:700;box-shadow:0 5px 17px #0008}
+.aroundButton[data-ready="0"]{opacity:.76;border-color:#8da895}
+.aroundButton[data-ready="1"]{background:#99764adf;border-color:#f6dba0}
+.actionInfo{background:#172c26;border:1px solid #7d9a7e;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12px;color:#d9dec8;line-height:1.5}
+.spotgroup{margin:14px 0 5px;color:#d4bb86;font-size:11px;font-weight:700;letter-spacing:.3px}
+.spotlist .spotDistance{font-size:9px;color:#aebdac;display:block;margin-top:2px}
+@media(max-width:850px){.joystick{display:flex}.aroundButton{bottom:29px;right:13px}.zoomButton{bottom:93px;right:13px}.worldPill{max-width:190px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}}
+@media(max-width:850px) and (orientation:landscape){.joystick{width:111px;height:123px;left:9px;bottom:5px}.joyTrack{width:100px;height:100px}.joyKnob{width:47px;height:47px}.joyCaption{font-size:9px}.aroundButton{bottom:13px}.zoomButton{bottom:66px}}
+</style></head><body>
 <div id="app" class="app">
 <header class="topbar">
- <div class="brand"><span class="mark">◈</span><div><small>PROJECT CONFLUENCE • PLAYABLE V2.5</small><strong>歧路同歸</strong></div></div>
+ <div class="brand"><span class="mark">◈</span><div><small>PROJECT CONFLUENCE • MOBILE V2.6</small><strong>歧路同歸</strong></div></div>
  <div class="hud"><span id="eraChip" class="chip era">歷史 · 西郊古橋</span><span id="timeChip" class="chip">第 1 日 08:20</span><span id="hpChip" class="chip smallchip">HP 0</span><button class="iconbutton" id="menuBtn" aria-label="遊戲設定">☰</button></div>
 </header>
 <main class="main">
@@ -31,7 +49,7 @@
   <div class="stage" id="stage"><canvas id="scene" aria-label="2D 洛陽西郊探索場景"></canvas>
    <div class="worldInfo"><span class="worldKicker">WESTERN OUTPOST · HISTORY ANCHOR</span><b id="placeHeading">洛陽西郊</b><small id="worldHint">點選地圖上的人與地點，看看發生了什麼。</small></div>
    <div class="worldPill" id="worldPill">商路中斷</div>
-   <div class="dpad" id="dpad"><button data-dir="up" aria-label="向上">▲</button><button data-dir="left" aria-label="向左">◀</button><button data-dir="down" aria-label="向下">▼</button><button data-dir="right" aria-label="向右">▶</button></div>
+   <div class="joystick" id="joystick" role="group" aria-label="移動搖桿"><div class="joyTrack" id="joyTrack"><div class="joyGuide"></div><div class="joyKnob" id="joyKnob"></div></div><span class="joyCaption">拖動移動</span></div>
    <button class="aroundButton" id="nearbyBtn">◎ 互動</button>
    <button class="zoomButton" id="zoomBtn">全圖</button>
    <div id="toast" class="toast" hidden></div>
@@ -207,14 +225,14 @@ const displayTime=t=>`第 ${Math.floor(t/1440)+1} 日 ${String(Math.floor(t%1440
 
 const KEY='project-confluence-v25-complete-slice';
 const $=id=>document.getElementById(id);const esc=x=>String(x).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
-let store={version:VERSION,active:'A',profiles:{},updated:Date.now()},state=null,selected='merchant',tab='explore',sideOpen=false,stance='balanced',modalKind='',nav=null,moveKeys=new Set(),overview=false,last=0,lastUI=0,sceneInfo=null,flashTimer=null;
+let store={version:VERSION,active:'A',profiles:{},updated:Date.now()},state=null,selected='artisan',tab='explore',sideOpen=false,stance='balanced',modalKind='',nav=null,moveKeys=new Set(),overview=false,last=0,lastUI=0,sceneInfo=null,flashTimer=null;
 try{const raw=localStorage.getItem(KEY);if(raw){const found=JSON.parse(raw);if(found.version===VERSION&&found.profiles&&found.active){store=found;for(const [pid,p] of Object.entries(store.profiles)){let g=loadData(JSON.stringify(p));if(g.view==='past'&&!g.history.completed){const elapsed=Math.min(480,Math.max(0,Math.floor((Date.now()-(store.updated||Date.now()))/60000)));if(elapsed>0)store.profiles[pid]=advance(g,elapsed)}}}}}catch(e){console.warn('restore skipped:',e)}
 const current=()=>store.profiles[store.active];
 const put=s=>{store.profiles[store.active]=s;state=s;save();renderAll()};
 function save(){store.updated=Date.now();try{localStorage.setItem(KEY,JSON.stringify(store))}catch(e){console.warn('save skipped:',e)}}
 function toast(text){const el=$('toast');el.textContent=text;el.hidden=false;clearTimeout(flashTimer);flashTimer=setTimeout(()=>el.hidden=true,3600)}
 function notice(text,kind='success'){const box=`<div class="feature ${kind==='error'?'alert':'success'}"><b>${kind==='error'?'無法執行這項行動':'世界有所改變'}</b><p>${esc(text)}</p></div>`;const p=$('panelContent');p.insertAdjacentHTML('afterbegin',box);toast(text)}
-function start(background='trail',id=store.active){store.profiles[id]=createGame(background);store.active=id;state=current();selected='merchant';tab='explore';nav=null;save();closeModal();renderAll();closeSheet();toast('你的故事開始了。點地圖上的人物，或從探索欄選擇地點。')}
+function start(background='trail',id=store.active){store.profiles[id]=createGame(background);store.active=id;state=current();selected='artisan';tab='explore';nav=null;save();closeModal();renderAll();closeSheet();toast('拖動左下蘑菇頭移動；靠近人物或物件，再按右下互動。')}
 function doAct(id,params={},auto=false){if(!state)return;
  try{const next=action(state,id,params);const old=state.history.completed;put(next);const msg=next.logs[0]?.text||'行動已執行';notice(msg);if(!old&&next.history.completed)completedModal();else if(!auto&&id==='replay'){closeModal();closeSheet()}}
  catch(e){notice(e.message,'error')}
@@ -222,9 +240,50 @@ function doAct(id,params={},auto=false){if(!state)return;
 function setTab(name,open=true){tab=name;document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));document.querySelectorAll('[data-mobile]').forEach(b=>b.classList.toggle('active',b.dataset.mobile===name));renderPanel();if(open&&window.innerWidth<=850)openSheet()}
 function openSheet(){$('panelArea').classList.add('open');$('scrim').hidden=false;sideOpen=true}
 function closeSheet(){$('panelArea').classList.remove('open');$('scrim').hidden=true;sideOpen=false;document.querySelectorAll('[data-mobile]').forEach(b=>b.classList.toggle('active',b.dataset.mobile==='map'))}
-function mark(id,walk=true){if(!state)return;const loc=PLACES.find(o=>o.id===id);if(!loc)return;selected=id;setTab('explore',false);
- if(walk&&state.view==='past'){let x=Math.min(loc.x,448),y=loc.y;const pos=state.player.position;if(Math.hypot(pos.x-x,pos.y-y)>65){nav={x,y,id};toast('正在前往「'+loc.name+'」。可隨時查看互動選項。')}}
- if(window.innerWidth<=850)openSheet()}
+const INTERACT_DISTANCE=110;
+function pointFor(loc){
+ if(loc.id==='artisan'&&state?.view==='past'&&state?.world?.repairAt!==null)return {x:438,y:275};
+ return {x:loc.x,y:loc.y};
+}
+function spotDistance(loc){
+ if(!state)return Infinity;const p=pointFor(loc),me=state.player.position;
+ return Math.hypot(me.x-p.x,me.y-p.y);
+}
+function nearestSpot(){return PLACES.map(loc=>({loc,d:spotDistance(loc)})).sort((a,b)=>a.d-b.d)[0]}
+function refreshNearbyButton(){
+ if(!state)return;
+ const n=nearestSpot();const selectedLoc=PLACES.find(o=>o.id===selected);
+ const chosen=n?.loc;
+ const ready=!!chosen&&n.d<=INTERACT_DISTANCE;
+ const b=$('nearbyBtn');b.dataset.ready=ready?'1':'0';b.textContent=ready?`◎ ${chosen.name}`:'◎ 附近互動';
+}
+function openContext(loc){
+ if(!state||!loc)return;
+ selected=loc.id;nav=null;
+ setTab('explore',false);
+ if(window.innerWidth<=850)openSheet();
+ toast(`目前互動：${loc.name}，可選擇專屬行動。`);
+}
+function mark(id,walk=true){
+ if(!state)return;const loc=PLACES.find(o=>o.id===id);if(!loc)return;
+ selected=id;tab='explore';
+ const p=pointFor(loc),pos=state.player.position;
+ const t={x:state.view==='past'?Math.min(p.x,448):p.x,y:p.y,id};
+ const d=Math.hypot(pos.x-t.x,pos.y-t.y);
+ if(walk&&state.view==='past'&&d>INTERACT_DISTANCE-13){
+   nav=t;renderPanel();closeSheet();toast(`前往${loc.name}，抵達後顯示專屬互動。`);return;
+ }
+ openContext(loc);
+}
+function interactNearby(){
+ if(!state)return;
+ const n=nearestSpot(),currently=PLACES.find(o=>o.id===selected);
+ const picked=n?.loc;
+ if(!picked||spotDistance(picked)>INTERACT_DISTANCE){
+   toast('附近沒有可互動對象。請移動到 NPC 或物件旁，再按互動。');return;
+ }
+ openContext(picked);
+}
 function doAt(id){if(!state)return;const loc=PLACES.find(o=>o.id===selected);if(!loc)return;
  if(['present','past','replay'].includes(id)){if(id==='replay'){confirmReplay();return;}doAct(id);return}
  if(id==='battle'){const t={x:Math.min(loc.x,448),y:loc.y},p=state.player.position;if(Math.hypot(p.x-t.x,p.y-t.y)>75){nav={...t,id:selected,action:'__battle_preview'};toast('正在前往山道，靠近後查看戰鬥預測。');closeSheet();return;}openBattle();return}
@@ -234,7 +293,7 @@ function doAt(id){if(!state)return;const loc=PLACES.find(o=>o.id===selected);if(
 function renderHud(){if(!state)return;const p=progress(state);$('eraChip').textContent=state.view==='past'?'歷史 · 斷橋之日':'現世 · 公共世界';$('timeChip').textContent=displayTime(state.time);$('hpChip').textContent='HP '+state.player.hp+'/'+state.player.maximumHp;$('worldPill').textContent=state.view==='present'?'現世 · 古橋暢通':p.caravan?'歷史已收束':p.restored?'橋已修復，山路仍受阻':p.isBuilding?'居民正在施工':'商路中斷';$('placeHeading').textContent=state.view==='present'?'洛陽西郊 · 現世':'洛陽西郊 · 斷橋之日';$('npcStatus').textContent=state.view==='present'?'現世中，所有人共享已經發生的共同歷史':p.isBuilding?'周木匠正在帶領居民施工':'居民會依材料、安全與人手自行行動';}
 function btn(label,id,hint='',other=''){return `<button class="action ${other}" data-action="${id}"><b>${esc(label)}</b>${hint?`<small>${esc(hint)}</small>`:''}</button>`}
 function numRow(name,val){return `<div class="metric"><span>${esc(name)}</span><b>${esc(val)}</b></div>`}
-function panelExplore(){const loc=PLACES.find(o=>o.id===selected)||PLACES[0],p=progress(state);const past=state.view==='past';let str=`<div class="label">${esc(loc.hint)}</div>`;
+function panelExplore(){const loc=PLACES.find(o=>o.id===selected)||PLACES[0],p=progress(state);const past=state.view==='past';const d=spotDistance(loc);let str=`<div class="label">${esc(loc.hint)}</div><div class="actionInfo">${esc(loc.name)} · ${d<=INTERACT_DISTANCE?'你已在互動距離內':'距離 '+Math.round(d)+' 步，點選行動會先前往此地點'}</div>`;
  if(past){if(state.history.completed)str+=`<div class="feature success"><b>這段歷史已收束</b><p>古橋已恢復通行。你的做法與所得熟練都會留下；可返回現世，或重演另一段經歷。</p></div>`;
  else if(selected==='bridge')str+=`<div class="feature"><b>現況 · 古橋結構 ${p.bridge}%</b><div class="meter"><span style="width:${p.bridge}%"></span></div><p>${p.restored?'橋已修復，但還須確認山路是否安全。':'橋中央斷裂，但部分木架仍能利用。它不是唯一需要解決的問題。'}</p></div>`;
  else if(selected==='merchant')str+=`<div class="feature warm"><b>商隊在等待</b><p>貨物無法通行，工人也缺材料。你可以詢問原因，也可以不受指派地調查周邊。</p></div>`;
@@ -247,7 +306,9 @@ function panelExplore(){const loc=PLACES.find(o=>o.id===selected)||PLACES[0],p=p
  if(selected==='workshop'||selected==='bridge')str+=numRow('持有木板',state.player.wood+' 片');
  str+='<div class="label" style="margin-top:15px">可以嘗試</div>'+optionsAt(state,selected).map(o=>btn(o.label,o.id,o.hint,o.id==='battle'?'warn':'')).join('');
  }else {str+=`<div class="feature success"><b>共享的現世</b><p>古橋在公共歷史中已經修復。私人歷史分歧不會讓其他玩家的橋突然壞掉。這裡目前是單機模擬，尚未連上多人伺服器。</p></div>${btn('再次進入我的歷史錨點','past','不會清除之前做過的事','primary')}`}
- str+=`<div class="label" style="margin-top:18px">附近的地點 · 可自由前往</div><div class="spotlist">${PLACES.map(o=>`<button data-place="${o.id}" class="${selected===o.id?'active':''}">${esc(o.name)}</button>`).join('')}</div>`;
+ const nearby=PLACES.map(o=>({o,d:spotDistance(o)})).sort((a,b)=>a.d-b.d);
+ str+=`<div class="spotgroup">靠近的互動對象</div><div class="spotlist">${nearby.slice(0,4).map(({o,d})=>`<button data-place="${o.id}" class="${selected===o.id?'active':''}">${esc(o.name)}<span class="spotDistance">${Math.round(d)} 步 · ${d<=INTERACT_DISTANCE?'可互動':'點擊前往'}</span></button>`).join('')}</div>`;
+ str+=`<div class="spotgroup">其他地點 · 點擊尋路</div><div class="spotlist">${nearby.slice(4).map(({o,d})=>`<button data-place="${o.id}" class="${selected===o.id?'active':''}">${esc(o.name)}<span class="spotDistance">${Math.round(d)} 步</span></button>`).join('')}</div>`;
  return str;
 }
 function panelCharacter(){const p=state.player;let result=`<p class="intro">五項基本能力容易理解，沒有預先鎖定的職業。熟練度只顯示你真正接觸過的本領。</p><div class="cols">`;
@@ -290,17 +351,31 @@ $('modalContent').addEventListener('click',e=>{const b=e.target.closest('button'
  if(b.dataset.fight){const before=JSON.parse(JSON.stringify(state)),plan=b.dataset.fight;if(!previewBattle(state,plan).win){modal(`<h2>預計敗北</h2><p>以目前策略無法勝利。可改變戰術，或用調查、交涉等方式處理危險。這次不會直接扣除生命。</p><button class="action" data-plan="${plan}"><b>重新配置戰術</b></button>`,'battle');return}
  closeModal();doAct('battle',{stance:plan},true);battleResult(before,state,plan);return}
  if(b.dataset.action){let id=b.dataset.action;closeModal();if(id==='toggle')doAct(state.view==='past'?'present':'past');else if(id==='wait')doAct('wait');else if(id==='profiles')profilesModal();else if(id==='replay')confirmReplay();else if(id==='resetAsk')resetModal();else if(id==='showJournal')setTab('journal');else doAct(id);return}
- if(b.dataset.profileSwitch){store.active=b.dataset.profileSwitch;state=current();selected='merchant';nav=null;save();closeModal();renderAll();toast('已切換至旅人 '+store.active);return}
+ if(b.dataset.profileSwitch){store.active=b.dataset.profileSwitch;state=current();selected='artisan';nav=null;save();closeModal();renderAll();toast('已切換至旅人 '+store.active);return}
  if(b.dataset.newProfile){starterModal(b.dataset.newProfile);return}
  if(b.dataset.replayConfirm){closeModal();doAct('replay');return}
  if(b.dataset.resetConfirm){try{localStorage.removeItem(KEY)}catch(e){};store={version:VERSION,active:'A',profiles:{},updated:Date.now()};state=null;closeModal();starterModal('A');return}
  if(b.dataset.close){closeModal();return}
 });
-$('menuBtn').addEventListener('click',timeModal);$('travelBtn').addEventListener('click',timeModal);$('nearbyBtn').addEventListener('click',()=>{mark(selected,false);setTab('explore')});$('zoomBtn').addEventListener('click',()=>{overview=!overview;$('zoomBtn').textContent=overview?'跟隨':'廣域'});$('modalClose').addEventListener('click',closeModal);$('closePanel').addEventListener('click',closeSheet);$('scrim').addEventListener('click',closeSheet);
+$('menuBtn').addEventListener('click',timeModal);$('travelBtn').addEventListener('click',timeModal);$('nearbyBtn').addEventListener('click',interactNearby);$('zoomBtn').addEventListener('click',()=>{overview=!overview;$('zoomBtn').textContent=overview?'跟隨':'廣域'});$('modalClose').addEventListener('click',closeModal);$('closePanel').addEventListener('click',closeSheet);$('scrim').addEventListener('click',closeSheet);
 for(const t of document.querySelectorAll('[data-tab]'))t.addEventListener('click',()=>setTab(t.dataset.tab));
 for(const m of document.querySelectorAll('[data-mobile]'))m.addEventListener('click',()=>{if(m.dataset.mobile==='map')closeSheet();else setTab(m.dataset.mobile)});
-for(const b of document.querySelectorAll('[data-dir]')){let key=b.dataset.dir;b.addEventListener('pointerdown',e=>{e.preventDefault();b.setPointerCapture(e.pointerId);moveKeys.add(key)});for(const ev of ['pointerup','pointercancel','lostpointercapture'])b.addEventListener(ev,()=>moveKeys.delete(key))}
-window.addEventListener('keydown',e=>{const k=e.key.toLowerCase();if(['arrowup','arrowdown','arrowleft','arrowright','w','a','s','d'].includes(k)){moveKeys.add(k);if(k.startsWith('arrow'))e.preventDefault()}});window.addEventListener('keyup',e=>moveKeys.delete(e.key.toLowerCase()));window.addEventListener('blur',()=>moveKeys.clear());
+const stick=$('joystick'),track=$('joyTrack'),knob=$('joyKnob');
+let joystickVector={x:0,y:0},joystickPointer=null;
+function setStick(e){
+ const r=track.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;
+ let dx=e.clientX-cx,dy=e.clientY-cy;
+ const limit=Math.max(28,Math.min(r.width,r.height)*.34),mag=Math.hypot(dx,dy);
+ if(mag>limit){dx*=limit/mag;dy*=limit/mag;}
+ joystickVector={x:Math.abs(dx/limit)<.1?0:dx/limit,y:Math.abs(dy/limit)<.1?0:dy/limit};
+ knob.style.left=`calc(50% + ${dx}px)`;knob.style.top=`calc(50% + ${dy}px)`;
+ stick.classList.add('engaged');
+}
+function releaseStick(){joystickPointer=null;joystickVector={x:0,y:0};knob.style.left='50%';knob.style.top='50%';stick.classList.remove('engaged');}
+track.addEventListener('pointerdown',e=>{if(!state||!$('modal').hidden)return;e.preventDefault();joystickPointer=e.pointerId;track.setPointerCapture(e.pointerId);setStick(e);});
+track.addEventListener('pointermove',e=>{if(joystickPointer!==e.pointerId)return;e.preventDefault();setStick(e)});
+for(const ev of ['pointerup','pointercancel','lostpointercapture'])track.addEventListener(ev,e=>{if(joystickPointer===e.pointerId)releaseStick()});
+window.addEventListener('keydown',e=>{const k=e.key.toLowerCase();if(['arrowup','arrowdown','arrowleft','arrowright','w','a','s','d'].includes(k)){moveKeys.add(k);if(k.startsWith('arrow'))e.preventDefault()}});window.addEventListener('keyup',e=>moveKeys.delete(e.key.toLowerCase()));window.addEventListener('blur',()=>{moveKeys.clear();releaseStick()});document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseStick()});
 
 // World art: self-contained procedural canvas, intentionally no external assets.
 const W=1040,H=650,canvas=$('scene'),ctx=canvas.getContext('2d');
@@ -378,7 +453,7 @@ function renderWorld(tm){const box=canvas.getBoundingClientRect();if(!box.width|
 let drag=null;
 canvas.addEventListener('pointerdown',e=>drag={x:e.clientX,y:e.clientY});
 canvas.addEventListener('pointerup',e=>{if(!state||!drag)return;const moved=Math.hypot(e.clientX-drag.x,e.clientY-drag.y);drag=null;if(moved>16)return;const cam=camera,rect=cam.rect||canvas.getBoundingClientRect(),x=cam.x+(e.clientX-rect.left-cam.padX)/cam.scale,y=cam.y+(e.clientY-rect.top-cam.padY)/cam.scale;
- const candidate=PLACES.map(loc=>({...loc,d:Math.hypot(loc.x-x,loc.y-y)})).sort((a,b)=>a.d-b.d)[0];if(candidate&&candidate.d<Math.max(43,43/cam.scale)){mark(candidate.id);return}
+ const candidate=PLACES.map(loc=>({...loc,d:Math.hypot(loc.x-x,loc.y-y)})).sort((a,b)=>a.d-b.d)[0];if(candidate&&candidate.d<Math.max(28,35/cam.scale)){mark(candidate.id);return}
  if(x>=0&&y>=0&&x<=W&&y<=H){const toX=state.view==='past'&&state.world.bridge<100?Math.min(464,x):x;nav={x:toX,y:bound(y,12,H-12)};toast(x>470&&state.view==='past'&&state.world.bridge<100?'目前還無法直接過河，可先找其他線索。':'正在前往選取位置。');closeSheet()}
 });canvas.addEventListener('pointercancel',()=>drag=null);
 function navigate(delta){if(!state||!$('modal').hidden)return;const pos=state.player.position;let dx=0,dy=0;
@@ -386,8 +461,9 @@ function navigate(delta){if(!state||!$('modal').hidden)return;const pos=state.pl
  if(moveKeys.has('arrowleft')||moveKeys.has('a')||moveKeys.has('left'))dx--;
  if(moveKeys.has('arrowdown')||moveKeys.has('s')||moveKeys.has('down'))dy++;
  if(moveKeys.has('arrowup')||moveKeys.has('w')||moveKeys.has('up'))dy--;
- const speed=165*delta;if(dx||dy){nav=null;const dist=Math.hypot(dx,dy);const x=pos.x+dx/dist*speed,y=pos.y+dy/dist*speed;pos.x=bound(x,12,state.view==='past'&&state.world.bridge<100?464:W-12);pos.y=bound(y,15,H-15);return}
- if(nav){const d=Math.hypot(nav.x-pos.x,nav.y-pos.y);const end=nav;if(d<=Math.max(3,speed+4)){pos.x=end.x;pos.y=end.y;nav=null;if(end.action){selected=end.id;setTab('explore',false);if(end.action==='__battle_preview')openBattle();else doAct(end.action);if(window.innerWidth<=850)openSheet()}else if(end.id){selected=end.id;setTab('explore',false);if(window.innerWidth<=850)openSheet()}else toast('已抵達');return}
+ if(joystickVector.x||joystickVector.y){dx=joystickVector.x;dy=joystickVector.y}
+ const speed=165*delta;if(dx||dy){nav=null;const dist=Math.max(1,Math.hypot(dx,dy));const x=pos.x+dx/dist*speed,y=pos.y+dy/dist*speed;pos.x=bound(x,12,state.view==='past'&&state.world.bridge<100?464:W-12);pos.y=bound(y,15,H-15);return}
+ if(nav){const d=Math.hypot(nav.x-pos.x,nav.y-pos.y);const end=nav;if(d<=Math.max(3,speed+4)){pos.x=end.x;pos.y=end.y;nav=null;if(end.action){selected=end.id;setTab('explore',false);if(end.action==='__battle_preview')openBattle();else doAct(end.action);if(window.innerWidth<=850)openSheet()}else if(end.id){openContext(PLACES.find(o=>o.id===end.id))}else toast('已抵達');return}
  pos.x+=(end.x-pos.x)/d*speed;pos.y+=(end.y-pos.y)/d*speed;
  }
 }
@@ -396,7 +472,7 @@ let drawingErrorReported=false;
 function frame(tm){
  const dt=Math.min(.05,Math.max(0,(tm-last)/1000||0));last=tm;
  try{
-   if(state)navigate(dt);
+   if(state){navigate(dt);if(Math.floor(tm/220)!==Math.floor((tm-dt*1000)/220))refreshNearbyButton();}
    if(renderWorld(tm))$('runtimeNotice').hidden=true;
    if(state){saveAccum+=dt;if(saveAccum>9){saveAccum=0;save()}}
  }catch(e){
