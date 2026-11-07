@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-Hant"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#12231d"><title>Project Confluence｜歧路同歸 V2.6 操作修正版</title>
+<meta name="theme-color" content="#12231d"><title>Project Confluence｜歧路同歸 V2.7 商路重做版</title>
 <style>
 :root{--bg:#0d1c1c;--panel:#19302c;--panel2:#233d36;--stroke:#48645a;--mint:#9ed2b8;--gold:#ecd29a;--ink:#f4eedf;--muted:#bdc9be;--red:#e7ab94}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,'Noto Sans TC','Microsoft JhengHei',sans-serif;color:var(--ink);font-size:14px}button{font:inherit;cursor:pointer;border:0;touch-action:manipulation}button:disabled{opacity:.42;cursor:default}[hidden]{display:none!important}.app{height:100dvh;min-height:390px;display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(circle at 20% 0,#26473c 0,transparent 65%),#0c1b1b}.topbar{height:70px;flex-shrink:0;padding:10px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #52736569;background:#10231fc7}.brand{display:flex;align-items:center;gap:12px}.brand .mark{width:46px;height:46px;border:1px solid #dfbd7d;border-radius:12px;display:grid;place-items:center;font-family:serif;font-size:30px;color:#f5dba2;background:#294139}.brand small{display:block;color:#b5c3b7;letter-spacing:2px;font-size:9px}.brand strong{display:block;font:25px/1.25 Georgia,'Noto Serif TC',serif;color:#f2ddb0}.hud{display:flex;align-items:center;gap:9px}.chip{background:#22382f;border:1px solid #516e5e;padding:8px 12px;border-radius:9px;color:#e8e3cf;white-space:nowrap;font-size:12px}.era{color:var(--gold)}.smallchip{color:#b9dbbd}.iconbutton{width:39px;height:39px;border:1px solid #698477;border-radius:9px;background:#294439;color:#e6dbb9;font-size:20px}.main{flex:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(327px,365px);gap:13px;padding:12px 16px;min-height:0}.world{display:flex;min-width:0;min-height:0;flex-direction:column;border:1px solid #66816c;border-radius:17px;overflow:hidden;box-shadow:0 24px 60px #05130f7a;background:#203d37}.stage{position:relative;flex:1;min-height:0;background:#527d58;overflow:hidden;touch-action:none}.stage canvas{width:100%;height:100%;display:block;touch-action:none}.worldInfo{position:absolute;left:16px;top:16px;background:#142921e8;border:1px solid #c1be9473;border-radius:12px;padding:13px 15px;pointer-events:none;max-width:290px;box-shadow:0 7px 28px #0819105f}.worldInfo .worldKicker{display:block;letter-spacing:1.6px;color:#d2d5b0;font-size:8px;margin-bottom:6px}.worldInfo b{font-family:serif;display:block;font-size:22px;color:#f7e5c7}.worldInfo small{display:block;font-size:11px;color:#bdcec0;line-height:1.5}.worldPill{position:absolute;right:14px;top:17px;background:#142821e3;border:1px solid #7d9a7e;padding:7px 12px;color:#f1deac;font-size:12px;border-radius:20px;pointer-events:none}.worldFooter{height:41px;background:#152b25;display:flex;align-items:center;justify-content:space-between;padding:0 14px;color:#bbcdbb;font-size:11px;gap:12px}.liveDot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#8ce6ab;box-shadow:0 0 0 3px #83ca9a26;margin-right:3px}.footerKeys{color:#99aea0}.panel{display:flex;flex-direction:column;min-width:0;min-height:0;border:1px solid #506e5f;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#233d35,#172d29 60%);box-shadow:0 18px 50px #05160c72}.panelHead{padding:18px 18px 13px;display:flex;justify-content:space-between;align-items:center}.panelHead small{font-size:10px;letter-spacing:2px;color:#95b4a7}.panelHead h2{margin:3px 0;font:24px Georgia,'Noto Serif TC',serif;color:#f5ddb1}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:#102420;border:1px solid #506b5c;border-radius:11px;padding:4px;margin:0 12px}.tabs button{background:none;color:#bacab8;border-radius:8px;padding:10px 5px;font-size:12px}.tabs button.active{background:#54705a;color:#fff0c7;font-weight:700}.panelScroll{flex:1;min-height:0;overflow:auto;padding:15px 17px 23px;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#647966 transparent}.panelScroll p{margin:8px 0 13px;line-height:1.65}.panelBottom{padding:10px 12px;border-top:1px solid #425b4c}.panelBottom button{display:flex;justify-content:space-between;width:100%;background:#122720;color:#d5ddc8;border-radius:9px;padding:10px 12px;font-size:12px}.label{color:#9fbaa9;letter-spacing:1px;font-size:10px;text-transform:uppercase;margin:5px 0 9px}.intro{font-size:12px;color:#c7d4c7;line-height:1.65}.feature{border:1px solid #617967;background:#28443a;border-radius:12px;padding:13px;margin-bottom:13px}.feature b{color:#f5ddb0}.feature p{color:#ccdacb;font-size:12px;line-height:1.65;margin:7px 0 0}.feature.warm{background:#3d4231;border-color:#97936a}.feature.alert{background:#3b302a;border-color:#987963}.feature.success{background:#254638;border-color:#6fa18c}.metric{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #52726370;padding:9px 0;color:#c6d7c5;font-size:12px;gap:9px}.metric b{color:#f1d8a4;font-weight:700}.action{display:block;width:100%;border:1px solid #547463;border-radius:11px;background:#29463b;color:#f0f3e7;margin-bottom:8px;text-align:left;padding:11px 13px;transition:background .12s,border .12s}.action:hover:not(:disabled){background:#3b5d4c;border-color:#9bb49c}.action b{display:block;font-size:13px}.action small{display:block;color:#b9cbbc;margin-top:4px;font-size:11px;line-height:1.4}.action.primary{background:#93724d;border-color:#ccaf7e;color:#fff1d1}.action.primary small{color:#f0dbc1}.action.ghost{background:#1d352d}.action.warn{border-color:#ab8066}.cols{display:grid;grid-template-columns:1fr 1fr;gap:7px}.stat{border-radius:10px;padding:10px 10px 9px;background:#294238;border:1px solid #4d685a}.stat .statHead{display:flex;align-items:center;gap:6px;color:#ebdfbd;font-size:12px}.stat b{font-size:18px;font-weight:800;float:right}.bar{height:5px;overflow:hidden;background:#122920;border-radius:6px;margin-top:10px}.bar i{display:block;height:100%;background:#cdb27b;border-radius:6px}.skillrow{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #54716074;padding:8px 1px;color:#c3d7c9;font-size:12px}.skillrow strong{color:#dccc98}.notes{font-size:12px;color:#bdd0c0}.spotlist{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:12px}.spotlist button{padding:9px 6px;border-radius:8px;border:1px solid #567365;background:#1b352e;color:#e1d8ba;text-align:center;font-size:12px}.spotlist button.active{background:#66593f;border-color:#dec38d}.journal{border-left:2px solid #889b75;padding:4px 0 12px 12px;margin:0 0 10px;font-size:12px;color:#d9e4d4}.journal time{font-size:10px;color:#e8cd94}.tag{display:inline-flex;align-items:center;padding:4px 8px;border-radius:6px;background:#3d5140;border:1px solid #678365;color:#e6e1c1;font-size:11px;margin-right:5px;margin-bottom:5px}.closePanel{display:none}.mobileNav{display:none}.dpad{display:none}.aroundButton,.zoomButton{display:none}.toast{z-index:4;position:absolute;top:82px;left:50%;transform:translateX(-50%);padding:11px 15px;border-radius:12px;border:1px solid #bccaa8;background:#142d25f5;box-shadow:0 10px 30px #05140d9e;text-align:center;pointer-events:none;max-width:min(94%,440px);font-size:12px;color:#f6e6b9}.scrim{position:fixed;inset:0;background:#071812b9;z-index:5}.modal{position:fixed;inset:0;z-index:20;background:#071911d9;display:grid;place-items:center;padding:15px}.modalCard{position:relative;width:min(560px,100%);max-height:calc(100dvh - 35px);overflow:auto;background:linear-gradient(150deg,#304c3e,#1a302b);border:1px solid #759179;border-radius:18px;padding:26px;box-shadow:0 35px 90px #000b}.modalClose{position:absolute;right:15px;top:14px;color:#e4d7b9;background:#3a5245;padding:4px 11px;border-radius:8px;font-size:17px}.modalCard h2{font-family:Georgia,'Noto Serif TC',serif;font-weight:600;color:#f4ddb1;font-size:29px;margin:8px 28px 8px 0}.modalCard p{font-size:13px;line-height:1.75;color:#ccd9c9}.modalCard .action{margin-top:9px}.modalLead{color:#b0bfae;font-size:10px;letter-spacing:2px}.ruleList{font-size:12px;color:#bdd0c1;line-height:1.7}.meter{height:7px;background:#102c22;border-radius:8px;overflow:hidden;margin:8px 0}.meter>span{display:block;height:100%;background:#debb7c}.floating{color:#d2e4ca;font-size:11px}
@@ -42,7 +42,7 @@
 </style></head><body>
 <div id="app" class="app">
 <header class="topbar">
- <div class="brand"><span class="mark">◈</span><div><small>PROJECT CONFLUENCE • V2.6.1 搖桿版</small><strong>歧路同歸</strong></div></div>
+ <div class="brand"><span class="mark">◈</span><div><small>PROJECT CONFLUENCE • V2.7 商路因果版</small><strong>歧路同歸</strong></div></div>
  <div class="hud"><span id="eraChip" class="chip era">歷史 · 西郊古橋</span><span id="timeChip" class="chip">第 1 日 08:20</span><span id="hpChip" class="chip smallchip">HP 0</span><button class="iconbutton" id="menuBtn" aria-label="遊戲設定">☰</button></div>
 </header>
 <main class="main">
@@ -70,9 +70,9 @@
 <div class="modal" id="modal" hidden><div class="modalCard"><button class="modalClose" id="modalClose" aria-label="關閉">✕</button><div id="modalContent"></div></div></div>
 </div>
 <script>
-/* Project Confluence V2.5 - a compact, deterministic RPG story engine.
+/* Project Confluence V2.7 - a compact, deterministic RPG story engine.
    No AI and no task-route selection. Rules are shared by UI and node tests. */
-const VERSION=25;
+const VERSION=27;
 const STATS=[
  {id:'body',name:'體魄',hint:'承受傷害、力量與耐力',icon:'◈'},
  {id:'agility',name:'敏捷',hint:'先手、閃避與移動',icon:'➶'},
@@ -117,7 +117,7 @@ function createGame(background='trail'){
  const bg=BACKGROUNDS[background];assert(!!bg,'未知的旅人經歷');
  return {version:VERSION,background,started:true,view:'past',time:8*60+20,
  player:{stats:clone(bg.stats),proficiencies:{},hp:55+bg.stats.body*6,maximumHp:55+bg.stats.body*6,wood:bg.items.wood,money:bg.items.money,position:{x:345,y:355},wins:0},
- world:{bridge:24,supply:1,safety:0,workers:1,repairAt:null,merchantFunding:false,woodInWild:3,caravanCrossed:false,npcProgress:0},
+ world:{bridge:24,supply:1,safety:0,workers:1,repairAt:null,merchantFunding:false,merchantDeliveryAt:null,merchantDelivered:false,workersAt:null,guardAt:null,fordAt:null,fordReady:false,woodInWild:3,caravanCrossed:false,npcProgress:0},
  present:{bridge:100,marketOpen:true,day:32},
  known:[],credited:[],contributions:[],trust:{artisan:0,merchant:0,guard:0},
  history:{completed:false,method:null,restored:false,visits:1},
@@ -145,24 +145,41 @@ function previewBattle(s,stance='balanced'){
 }
 function progress(s){const w=s.world;
  return {safety:w.safety,materials:w.supply,workers:w.workers,bridge:w.bridge,
-  ready:w.bridge>=100&&w.safety>=1,restored:w.bridge>=100,
+  ready:(w.bridge>=100&&w.safety>=1)||w.fordReady,restored:w.bridge>=100,
   isBuilding:w.repairAt!==null,caravan:w.caravanCrossed,
+  funding:w.merchantFunding,merchantDelivered:w.merchantDelivered,
+  shipmentPending:w.merchantDeliveryAt!==null,workersPending:w.workersAt!==null,
+  guardPending:w.guardAt!==null,fordPending:w.fordAt!==null,fordReady:w.fordReady,
   hasTrail:has(s.known,'trail'),hasFord:has(s.known,'ford'),hasStructure:has(s.known,'structure')};
 }
-function tryBuild(s){const w=s.world;if(w.repairAt!==null||w.bridge>=100)return;
- if(w.safety>=1&&w.supply>=3&&w.workers>=2){w.supply-=2;w.repairAt=s.time+80;msg(s,'道路已安全、材料和工人也到位；周木匠自行安排施工。約 80 分鐘後完成。')}}
-function finish(s){const w=s.world;if(w.bridge>=100&&w.safety>=1&&!w.caravanCrossed){w.bridge=100;w.caravanCrossed=true;
- s.history.completed=true;s.history.restored=true;
- if(!s.history.method){const types=s.contributions.map(c=>c.type);s.history.method=types.includes('craft')?'自行修復':types.includes('combat')?'戰鬥護衛':types.includes('trade')?'交易協調':types.includes('survey')?'調查間接協助':'居民自主完成'}
- msg(s,'商路重新暢通。你的歷史在此收束，個人經歷和熟練成長會保留。');}}
+function tryBuild(s){const w=s.world;if(w.repairAt!==null||w.bridge>=100||w.caravanCrossed)return;
+ if(w.safety>=1&&w.supply>=3&&w.workers>=2){w.supply-=2;w.repairAt=s.time+150;
+  msg(s,'山道安全、建材和工人都到位。周木匠開始施工，約需兩個半小時；你可以去做別的事。')}}
+function finish(s){const w=s.world;
+ const byBridge=w.bridge>=100&&w.safety>=1,byFord=!!w.fordReady;
+ if(!(byBridge||byFord)||w.caravanCrossed)return;
+ w.caravanCrossed=true;s.history.completed=true;s.history.restored=true;
+ if(byFord&&!byBridge)s.history.method='發現渡口，商路先行恢復';
+ else if(!s.history.method){const types=s.contributions.map(c=>c.type);
+  s.history.method=types.includes('craft')?'自行修復':types.includes('combat')?'戰鬥護衛':types.includes('trade')?'交易協調':types.includes('survey')?'調查間接協助':'居民自主完成';}
+ msg(s,byFord&&!byBridge?'商隊實際試走渡口後恢復運輸；原橋仍然損壞，木匠日後還需修橋。':'木匠完成橋梁，護衛確認安全，商隊終於能通行。');
+}
 function advance(state,mins=30){assert(Number.isInteger(mins)&&mins>=0&&mins<=10000,'時間參數錯誤');const s=clone(state),target=s.time+mins;
  for(let t=s.time+1;t<=target;t++){
   s.time=t;const w=s.world;
-  // NPCs act without waiting for a player to click a prescribed task sequence.
-  if(w.safety===0&&t>=870){w.safety=1;msg(s,'韓巡守帶隊調查，終於讓山道恢復安全。')}
-  if(w.safety>=1&&w.supply<3&&t%60===0){w.supply++;msg(s,'商人把外地貨車運來的材料送到工地。')}
-  if(t>=940&&w.workers<2){w.workers=2;msg(s,'居民自行集結，與木匠組成修橋隊伍。')}
-  if(w.repairAt!==null&&t>=w.repairAt){w.bridge=100;w.repairAt=null;msg(s,'周木匠與居民完成橋梁修復。')}
+  // Promises are not physical outcomes: every NPC task needs elapsed world time.
+  if(w.guardAt!==null&&t>=w.guardAt){w.guardAt=null;w.safety=1;msg(s,'巡守完成山路清查，工程隊現在能安全運料。')}
+  if(w.workersAt!==null&&t>=w.workersAt){w.workersAt=null;w.workers=2;msg(s,'受邀的工人抵達工地，木匠可以安排施工。')}
+  if(w.fordAt!==null&&t>=w.fordAt){w.fordAt=null;w.fordReady=true;msg(s,'商隊派人載貨試走淺灘，確認這條路能讓商路先恢復。')}
+  if(w.merchantFunding&&w.safety>=1&&!w.merchantDelivered&&w.merchantDeliveryAt===null){
+   w.merchantDeliveryAt=t+90;msg(s,'山路已安全，商隊才敢將承諾的木料裝車，預計 90 分鐘送到。')}
+  if(w.merchantDeliveryAt!==null&&t>=w.merchantDeliveryAt){w.merchantDeliveryAt=null;w.merchantDelivered=true;w.supply+=2;
+   msg(s,'商隊運來兩份建材，現在才真正加入工地庫存。')}
+  // Residents have independent plans, but do not instantly solve the event for the player.
+  if(w.safety===0&&w.guardAt===null&&t>=500+1350){w.guardAt=t+90;msg(s,'巡守自發組織夜間巡邏，稍後可能讓山路安全。')}
+  if(w.safety>=1&&w.supply<3&&t>=500+1600&&t%180===0){w.supply++;msg(s,'附近商販循既有道路送到一份材料。')}
+  if(w.workers<2&&w.workersAt===null&&t>=500+2100){w.workersAt=t+130;msg(s,'居民自行招募人手，預計稍後加入施工。')}
+  if(w.repairAt!==null&&t>=w.repairAt){w.bridge=100;w.repairAt=null;msg(s,'周木匠與居民完成古橋修復。')}
   tryBuild(s);finish(s);
   if(w.caravanCrossed)break;
  }
@@ -182,10 +199,10 @@ function optionsAt(s,id){const map={
  bridge:[['inspect','檢查橋梁','觀察結構是否還能修復'],['salvage','整理散落木料','可以拿去修橋或交給工匠'],['repair','親手加固橋梁','利用手藝與背包木板']],
  artisan:[['talkArtisan','和周木匠交談','詢問目前的施工困難'],['recruit','請他聯絡工人','需先建立互信']],
  workshop:[['repair','使用工具加固橋面','有足夠材料與技藝即可施工'],['salvage','整理工坊材料','可回收的材料有限']],
- merchant:[['talkMerchant','詢問商隊','了解資金、物資和商路的需求'],['negotiate','協調工程資源','依信任與人際能力判斷'],['sellWood','出售木板給商隊','物資真正會送到工地'],['hire','雇用修橋人手','支付工資或由商隊出資']],
+ merchant:[['talkMerchant','詢問商隊','了解資金、物資和商路的需求'],['negotiate','提出有根據的供料方案','先了解橋況、木匠需求或渡口，再談出資'],['sellWood','出售木板給商隊','木料需要實際交付，並非口頭補給'],['hire','委託招募施工人手','安排工資與招募，需要工人抵達時間']],
  guard:[['talkGuard','和巡守交談','可能透露山路的安全情況'],['report','提交山道證據','調查後可使守衛主動處理'],['escort','安排護衛','需要與守衛建立聯繫']],
  woods:[['scout','尋找山道線索','探索和思考有助於觀察'],['battle','接近盜匪','查看戰前勝負預測']],
- river:[['survey','勘查下游','探索替代的運輸路線'],['reroute','告訴商隊渡口情報','幫居民間接排除障礙']],
+ river:[['survey','勘查下游','探索替代的運輸路線'],['reroute','請商隊實地試走渡口','需先勘查並與商隊建立聯繫，商隊要花時間載貨測試']],
  anchor:[['present','返回共同現世','歷史進度仍會保存'],['replay','從頭重演事件','保留熟練與首次成長紀錄']]
  };
  return (map[id]||[]).map(([id,label,hint])=>({id,label,hint}));
@@ -196,25 +213,25 @@ function action(state,id,params={}){
  const w=s.world,p=s.player,st=p.stats;let mins=0;
  switch(id){
  case 'inspect':fact(s,'structure','橋梁仍有可以使用的支架。周木匠可能有更好的補強方法。');mins=8;break;
- case 'talkArtisan':s.trust.artisan=clamp(s.trust.artisan+1,0,2);fact(s,'worksite','周木匠：缺材料、人力，山道還不安全；有人湊齊條件我就能開工。');mins=8;break;
- case 'talkMerchant':s.trust.merchant=clamp(s.trust.merchant+1,0,2);fact(s,'commerce','商人：我們不能一直停在這。若能安排護衛，我願意支援修橋材料。','commerce');mins=8;break;
+ case 'talkArtisan':s.trust.artisan=clamp(s.trust.artisan+1,0,2);fact(s,'worksite','周木匠：補強需要材料與人手，送貨車也得安全抵達。這些問題可以分別處理。');mins=8;break;
+ case 'talkMerchant':s.trust.merchant=clamp(s.trust.merchant+1,0,2);fact(s,'commerce','商人：我能答應出資，但我不會直接把貨物變出來。先確認工地需求，並讓運輸道路安全。','commerce');mins=8;break;
  case 'talkGuard':s.trust.guard=clamp(s.trust.guard+1,0,2);fact(s,'threat','韓巡守：最近山道不太平。若有人找到可靠證據，我能帶隊處理。');mins=8;break;
  case 'salvage':assert(w.woodInWild>0,'附近可回收的木料已經整理完。');w.woodInWild--;p.wood++;w.supply++;grant(s,'artisan',1,'salvage:'+w.woodInWild);contribution(s,'salvage','craft','整理舊木料並改善工地供應');msg(s,'你找出一塊可用木板，現場建材也增加了。');mins=22;break;
  case 'repair':assert(w.bridge<100,'橋梁已經修復，無須再浪費材料。');assert(p.wood>=1,'還缺木板，可先整理橋邊的材料。');assert(st.craft>=3,'需要技藝 3 才能獨立加固；也可以提供材料，讓木匠協助。');p.wood--;w.bridge=Math.min(100,w.bridge+38);grant(s,'artisan',3,'repair:'+Math.ceil(w.bridge/38));contribution(s,'direct-repair','craft','親自修補了橋梁支架');msg(s,`你完成部分橋面補強，橋梁進度 ${w.bridge}%。`);mins=42;break;
- case 'recruit':assert(s.trust.artisan>0,'先和木匠交談，了解他需要什麼協助。');assert(w.workers<2,'木匠已經找到足夠人手。');w.workers=2;grant(s,'relations',2,'recruit-workers');contribution(s,'people','social','協助木匠組織施工人手');msg(s,'木匠認可你的協助，答應通知其他居民。');mins=15;break;
- case 'negotiate':assert(s.trust.merchant>0,'先詢問商隊的實際需要。');assert(st.social>=4||s.trust.merchant>=2,'目前的交涉條件不足；可以先建立信任，或改提供實際物資。');assert(!w.merchantFunding,'商隊已經同意支援工程。');w.merchantFunding=true;w.supply+=2;grant(s,'relations',3,'funding');grant(s,'commerce',2,'funding-commercial');contribution(s,'finance','trade','協調商隊出資並調入材料');msg(s,'商隊同意提供工程資金和建材。');mins=25;break;
+ case 'recruit':assert(s.trust.artisan>0,'先和木匠交談，了解他需要什麼協助。');assert(w.workers<2&&w.workersAt===null,'木匠已找到工人，或正在等他們抵達。');w.workersAt=s.time+65;grant(s,'relations',2,'recruit-workers');contribution(s,'people','social','協助木匠聯絡願意出工的居民');msg(s,'木匠通知工人，但他們還在其他地方工作，約一小時後才會到。');mins=15;break;
+ case 'negotiate':assert(s.trust.merchant>0,'先詢問商隊的實際需要。');assert(has(s.known,'worksite')||has(s.known,'structure')||has(s.known,'ford'),'商人要求可行方案：先詢問木匠、檢查橋況，或勘查其他路線。');assert(st.social>=4||s.trust.merchant>=2,'目前的交涉條件不足；可以先建立信任，或交付實際物資。');assert(!w.merchantFunding,'商隊已經承諾支援工程。');w.merchantFunding=true;grant(s,'relations',3,'funding');grant(s,'commerce',2,'funding-commercial');contribution(s,'finance','trade','提出可行方案，取得商隊出資承諾');msg(s,'商隊只先承諾資金。木材還沒送到；山路安全後，貨車才會動身。');mins=25;break;
  case 'sellWood':assert(p.wood>=1,'手上沒有可以供應的木板。');p.wood--;p.money+=5;w.supply++;grant(s,'commerce',1,'wood-contract');contribution(s,'trade-wood','trade','以正常價格提供施工用木料');msg(s,'木板交到商人手裡，工地庫存也確實增加。');mins=12;break;
- case 'hire':assert(w.workers<2,'施工人手已足夠。');assert(w.merchantFunding||p.money>=12,'需要 12 銅錢，或先讓商隊承擔工程費用。');if(!w.merchantFunding)p.money-=12;w.workers=2;grant(s,'commerce',2,'hire');contribution(s,'hire','trade','雇用居民參與工程');msg(s,'工人已經加入施工隊。');mins=20;break;
+ case 'hire':assert(w.workers<2&&w.workersAt===null,'人手已經到位，或工人正在趕來。');assert(w.merchantFunding||p.money>=12,'需要 12 銅錢，或先取得商隊出資承諾。');if(!w.merchantFunding)p.money-=12;w.workersAt=s.time+75;grant(s,'commerce',2,'hire');contribution(s,'hire','trade','支付薪資並委託招募工人');msg(s,'招募通知已送出，工人需時間抵達工地；現在還不能開工。');mins=20;break;
  case 'scout':assert(st.mind+st.agility>=5,'這條山道需要更仔細的觀察與機動能力；也可以先向巡守打聽。');fact(s,'trail','你在山道發現盜匪的撤離痕跡，可以提供巡守可靠證據。');grant(s,'survey',2,'scout-trail');contribution(s,'scout','survey','尋找並確認山道盜匪蹤跡');mins=28;break;
- case 'report':assert(has(s.known,'trail'),'還沒有足夠的線索。可去山道調查。');assert(w.safety===0,'巡守已處理道路安全問題。');w.safety=1;grant(s,'relations',1,'report');grant(s,'survey',1,'report-evidence');contribution(s,'report','survey','以證據協助巡守排除威脅');msg(s,'巡守依證據封鎖危險路段，商隊可以安全運輸。');mins=19;break;
- case 'escort':assert(s.trust.guard>0,'先和巡守交談，確認需要哪種護衛。');assert(w.safety===0,'山道目前已經安全。');assert(w.merchantFunding||p.money>=12,'安排護衛需要 12 銅錢或商隊贊助。');if(!w.merchantFunding)p.money-=12;w.safety=1;grant(s,'relations',2,'escort');contribution(s,'escort','social','協調巡守護送工程隊');msg(s,'巡守接受你的安排，派出人手護送工程隊。');mins=24;break;
+ case 'report':assert(has(s.known,'trail'),'還沒有足夠的線索。可去山道調查。');assert(w.safety===0&&w.guardAt===null,'巡守已經在清查道路，或山道已安全。');w.guardAt=s.time+50;grant(s,'relations',1,'report');grant(s,'survey',1,'report-evidence');contribution(s,'report','survey','交出盜匪線索，協助巡守安排清查');msg(s,'巡守根據線索集結人手，稍後才能完成排查。');mins=19;break;
+ case 'escort':assert(s.trust.guard>0,'先和巡守交談，確認需要哪種護衛。');assert(w.safety===0&&w.guardAt===null,'山道已安全，或巡守正在護送清查。');assert(w.merchantFunding||p.money>=12,'安排護衛需要 12 銅錢或商隊贊助。');if(!w.merchantFunding)p.money-=12;w.guardAt=s.time+75;grant(s,'relations',2,'escort');contribution(s,'escort','social','協調護衛資金與巡守安排');msg(s,'巡守接受委託，會先清查山道；現在還不能安全運材。');mins=24;break;
  case 'battle':assert(w.safety===0,'這批敵人已經被排除，不會重複生成。');{const sim=previewBattle(s,params.stance||'balanced');assert(sim.win,`這個配置預計會戰敗（剩餘生命 ${sim.remaining}）；先改戰術或考慮其他方法。`);p.hp=sim.remaining;p.wins++;w.safety=2;grant(s,'combat',5,'battle-main');grant(s,'survey',1,'fight-observe');contribution(s,'fight','combat','擊退盜匪，保障施工安全');msg(s,`你以「${({balanced:'均衡',swift:'迅捷',guard:'守勢'}[params.stance||'balanced'])}」戰術勝利，剩餘生命 ${sim.remaining}。`);mins=34;}break;
  case 'survey':fact(s,'ford','下游有一段可讓人員先行通過的淺灘。若商人同意，能先避開危險山道。');grant(s,'survey',1,'river');mins=18;break;
- case 'reroute':assert(has(s.known,'ford'),'先勘查河邊，確認淺灘通行條件。');assert(s.trust.merchant>0,'先向商隊確認運輸需求，才能協調改路。');assert(w.safety===0,'主幹道已安全，無須再安排繞行。');w.safety=1;grant(s,'commerce',2,'reroute');grant(s,'survey',1,'reroute-survey');contribution(s,'river-route','survey','提出可行的臨時通行情報');msg(s,'商隊派人走淺灘，協助把工程隊和物資安全帶回。');mins=28;break;
+ case 'reroute':assert(has(s.known,'ford'),'先勘查河邊，確認淺灘通行條件。');assert(s.trust.merchant>0,'先向商隊確認運輸需求，才能協調改路。');assert(w.fordAt===null&&!w.fordReady,'商隊已經在試走渡口，或渡口已驗證。');w.fordAt=s.time+115;grant(s,'commerce',2,'reroute');grant(s,'survey',1,'reroute-survey');contribution(s,'river-route','survey','提供渡口線索，協助商隊安排實地測試');msg(s,'商隊派出載貨小隊試走渡口，尚未確定重貨是否能通過。');mins=28;break;
  case 'present':s.view='present';msg(s,'你返回共同現世；古橋已修復。私人歷史的經歷沒有覆蓋其他玩家的現世。');break;
  case 'past':s.view='past';msg(s,'回到自己的歷史錨點，原先進度和居民狀態仍在。');break;
  case 'replay':{const pSaved=clone(p), credited=clone(s.credited),visits=s.history.visits+1;const starter=createGame(s.background);starter.player={...pSaved,position:{x:345,y:355}};starter.credited=credited;starter.history.visits=visits;msg(starter,'歷史重演：居民與橋梁回到事件起點，但已獲得的能力、金錢與首次熟練紀錄不重置。');s=starter;break;}
- case 'wait':mins=90;msg(s,'你先去做其他事；居民按照目前條件繼續處理橋梁。');break;
+ case 'wait':mins=90;msg(s,'你暫時休息，時間繼續流動。工人、貨車與巡守依實際情況行動。');break;
  default:throw Error('未知動作：'+id);
  }
  if(mins)s=advance(s,mins);
@@ -224,7 +241,7 @@ function saveData(s){return JSON.stringify(s)}
 function loadData(str){const s=JSON.parse(str);assert(s?.version===VERSION&&s?.player?.stats&&Array.isArray(s.credited),'存檔版本不相容');return s}
 const displayTime=t=>`第 ${Math.floor(t/1440)+1} 日 ${String(Math.floor(t%1440/60)).padStart(2,'0')}:${String(t%60).padStart(2,'0')}`;
 
-const KEY='project-confluence-v25-complete-slice';
+const KEY='project-confluence-v27-causality';
 const $=id=>document.getElementById(id);const esc=x=>String(x).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
 let store={version:VERSION,active:'A',profiles:{},updated:Date.now()},state=null,selected='artisan',tab='explore',sideOpen=false,stance='balanced',modalKind='',nav=null,moveKeys=new Set(),overview=false,last=0,lastUI=0,sceneInfo=null,flashTimer=null;
 try{const raw=localStorage.getItem(KEY);if(raw){const found=JSON.parse(raw);if(found.version===VERSION&&found.profiles&&found.active){store=found;for(const [pid,p] of Object.entries(store.profiles)){let g=loadData(JSON.stringify(p));if(g.view==='past'&&!g.history.completed){const elapsed=Math.min(480,Math.max(0,Math.floor((Date.now()-(store.updated||Date.now()))/60000)));if(elapsed>0)store.profiles[pid]=advance(g,elapsed)}}}}}catch(e){console.warn('restore skipped:',e)}
@@ -291,19 +308,20 @@ function doAt(id){if(!state)return;const loc=PLACES.find(o=>o.id===selected);if(
  if(state.view==='past'){const target={x:Math.min(loc.x,448),y:loc.y};const p=state.player.position;
   if(Math.hypot(p.x-target.x,p.y-target.y)>75){nav={...target,id:selected,action:id};toast(`正在前往${loc.name}，抵達後執行「${optionsAt(state,selected).find(x=>x.id===id)?.label||id}」。`);closeSheet();return}}
  doAct(id)}
-function renderHud(){if(!state)return;const p=progress(state);$('eraChip').textContent=state.view==='past'?'歷史 · 斷橋之日':'現世 · 公共世界';$('timeChip').textContent=displayTime(state.time);$('hpChip').textContent='HP '+state.player.hp+'/'+state.player.maximumHp;$('worldPill').textContent=state.view==='present'?'現世 · 古橋暢通':p.caravan?'歷史已收束':p.restored?'橋已修復，山路仍受阻':p.isBuilding?'居民正在施工':'商路中斷';$('placeHeading').textContent=state.view==='present'?'洛陽西郊 · 現世':'洛陽西郊 · 斷橋之日';$('npcStatus').textContent=state.view==='present'?'現世中，所有人共享已經發生的共同歷史':p.isBuilding?'周木匠正在帶領居民施工':'居民會依材料、安全與人手自行行動';}
+function renderHud(){if(!state)return;const p=progress(state);$('eraChip').textContent=state.view==='past'?'歷史 · 斷橋之日':'現世 · 公共世界';$('timeChip').textContent=displayTime(state.time);$('hpChip').textContent='HP '+state.player.hp+'/'+state.player.maximumHp;$('worldPill').textContent=state.view==='present'?'現世 · 古橋暢通':p.caravan?(p.fordReady&&!p.restored?'商路通行 · 古橋仍損壞':'歷史已收束'):p.restored?'橋已修復，山路仍受阻':p.isBuilding?'居民正在施工':'商路中斷';$('placeHeading').textContent=state.view==='present'?'洛陽西郊 · 現世':'洛陽西郊 · 斷橋之日';$('npcStatus').textContent=state.view==='present'?'現世中，所有人共享已經發生的共同歷史':p.isBuilding?'周木匠正在帶領居民施工':p.fordPending?'商隊正在試走渡口':p.guardPending?'巡守正在清查道路':p.shipmentPending?'商隊正在送材料':p.workersPending?'居民正在前往工地':'居民會依材料、安全與人手自行行動';}
 function btn(label,id,hint='',other=''){return `<button class="action ${other}" data-action="${id}"><b>${esc(label)}</b>${hint?`<small>${esc(hint)}</small>`:''}</button>`}
 function numRow(name,val){return `<div class="metric"><span>${esc(name)}</span><b>${esc(val)}</b></div>`}
 function panelExplore(){const loc=PLACES.find(o=>o.id===selected)||PLACES[0],p=progress(state);const past=state.view==='past';const d=spotDistance(loc);let str=`<div class="label">${esc(loc.hint)}</div><div class="actionInfo">${esc(loc.name)} · ${d<=INTERACT_DISTANCE?'你已在互動距離內':'距離 '+Math.round(d)+' 步，點選行動會先前往此地點'}</div>`;
- if(past){if(state.history.completed)str+=`<div class="feature success"><b>這段歷史已收束</b><p>古橋已恢復通行。你的做法與所得熟練都會留下；可返回現世，或重演另一段經歷。</p></div>`;
+ if(past){if(state.history.completed)str+=`<div class="feature success"><b>這段歷史已收束</b><p>${p.fordReady&&!p.restored?'商隊找到了渡口，原橋仍破損。':'古橋已恢復通行。'}你的經歷、情報與熟練會留下；可返回現世，或重演另一段經歷。</p></div>`;
  else if(selected==='bridge')str+=`<div class="feature"><b>現況 · 古橋結構 ${p.bridge}%</b><div class="meter"><span style="width:${p.bridge}%"></span></div><p>${p.restored?'橋已修復，但還須確認山路是否安全。':'橋中央斷裂，但部分木架仍能利用。它不是唯一需要解決的問題。'}</p></div>`;
- else if(selected==='merchant')str+=`<div class="feature warm"><b>商隊在等待</b><p>貨物無法通行，工人也缺材料。你可以詢問原因，也可以不受指派地調查周邊。</p></div>`;
+ else if(selected==='merchant')str+=`<div class="feature warm"><b>${p.funding?'商人已承諾出資':'商隊在等待'}</b><p>${p.merchantDelivered?'商隊的建材已送達工地。':p.shipmentPending?'車隊已出發，材料仍在運送途中。':p.funding?'有出資承諾，但貨車須等山路安全才會送貨。':'商人不能單靠談話解決問題。必須先有可行方案，再讓人、貨與交通條件逐步到位。'}</p></div>`;
  else if(selected==='woods')str+=`<div class="feature alert"><b>山道情況不明</b><p>盜匪可能阻擋運輸；可以戰鬥，也可能靠調查證據或護衛安排解決。</p></div>`;
- else if(selected==='anchor')str+=`<div class="feature"><b>歷史錨點</b><p>每位旅人都能重訪斷橋之日，過程不同，最後仍返回同一現世。</p></div>`;
+ else if(selected==='river')str+=`<div class="feature"><b>下游通道</b><p>${p.fordReady?'商隊已試走成功，原橋無須立刻修好。':p.fordPending?'商隊正在實際載貨測試，結果尚未確定。':'淺灘也許能通行，但需要勘查與實際載貨確認。'}</p></div>`;
+  else if(selected==='anchor')str+=`<div class="feature"><b>歷史錨點</b><p>每位旅人都能重訪斷橋之日，過程不同，最後仍返回同一現世。</p></div>`;
  else str+=`<p class="intro">可以直接交談、調查、交付材料或採取行動，不必先接受指定任務。</p>`;
- if(selected==='merchant')str+=numRow('商人信任',state.trust.merchant+' / 2')+numRow('工地材料',p.materials+' 份');
- if(selected==='artisan')str+=numRow('木匠信任',state.trust.artisan+' / 2')+numRow('施工人手',p.workers+' 人');
- if(selected==='guard')str+=numRow('山道安全',p.safety>0?'可運輸':'危險')+numRow('巡守信任',state.trust.guard+' / 2');
+ if(selected==='merchant')str+=numRow('商人信任',state.trust.merchant+' / 2')+numRow('工地材料',p.materials+' 份')+numRow('工程出資',p.funding?'已承諾':'未承諾')+numRow('運材進度',p.merchantDelivered?'已抵達':p.shipmentPending?'運送中':p.funding?'等候道路安全':'尚未安排');
+ if(selected==='artisan')str+=numRow('木匠信任',state.trust.artisan+' / 2')+numRow('施工人手',p.workers+' 人')+(p.workersPending?numRow('其他工人','正在趕來'):'');
+ if(selected==='guard')str+=numRow('山道安全',p.safety>0?'可運輸':p.guardPending?'巡守清查中':'危險')+numRow('巡守信任',state.trust.guard+' / 2');
  if(selected==='workshop'||selected==='bridge')str+=numRow('持有木板',state.player.wood+' 片');
  str+='<div class="label" style="margin-top:15px">可以嘗試</div>'+optionsAt(state,selected).map(o=>btn(o.label,o.id,o.hint,o.id==='battle'?'warn':'')).join('');
  }else {str+=`<div class="feature success"><b>共享的現世</b><p>古橋在公共歷史中已經修復。私人歷史分歧不會讓其他玩家的橋突然壞掉。這裡目前是單機模擬，尚未連上多人伺服器。</p></div>${btn('再次進入我的歷史錨點','past','不會清除之前做過的事','primary')}`}
@@ -330,7 +348,7 @@ function renderPanel(){if(!state)return;const title=tab==='explore'?PLACES.find(
 function renderAll(){if(!state)return;renderHud();renderPanel();document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));}
 function modal(html,kind=''){modalKind=kind;$('modalContent').innerHTML=html;$('modal').hidden=false;}
 function closeModal(){if(modalKind==='start'&&!state)return;$('modal').hidden=true;modalKind=''}
-function starterModal(profile='A'){const cards=Object.entries(BACKGROUNDS).map(([key,b])=>`<button class="action" data-start="${key}" data-profile="${profile}"><b>${esc(b.name)}</b><small>${esc(b.desc)} · 這不是職業，以後可以自由發展其他能力</small></button>`).join('');modal(`<span class="modalLead">PROJECT CONFLUENCE / BEGIN YOUR JOURNEY</span><h2>從一段經歷開始</h2><p>這不是職業選擇。只是決定你起初比較熟悉什麼。之後完全可以練別的本領，也不必按照任務追蹤前進。</p>${cards}<div class="ruleList">玩法：點人物與地點發現資訊；同一事件能靠戰鬥、工藝、交涉、探索或間接協助完成。角色會依照真正做過的事成長。</div>`,'start')}
+function starterModal(profile='A'){const cards=Object.entries(BACKGROUNDS).map(([key,b])=>`<button class="action" data-start="${key}" data-profile="${profile}"><b>${esc(b.name)}</b><small>${esc(b.desc)} · 這不是職業，以後可以自由發展其他能力</small></button>`).join('');modal(`<span class="modalLead">PROJECT CONFLUENCE / BEGIN YOUR JOURNEY</span><h2>從一段經歷開始</h2><p>這不是職業選擇。只是決定你起初比較熟悉什麼。之後完全可以練別的本領，也不必按照任務追蹤前進。</p>${cards}<div class="ruleList">玩法：點人物與地點取得情報；承諾並不等於完成，居民需要實際的材料、時間與安全路線。角色會依照真正做過的事成長。</div>`,'start')}
 function openBattle(plan='balanced'){
  stance=plan;const options=['balanced','swift','guard'].map(x=>{const pre=previewBattle(state,x);const desc={balanced:'攻守平均',swift:'敏捷出手更快，防護較薄',guard:'偏重防護，攻擊較慢'}[x];return `<button class="action ${plan===x?'primary':''}" data-plan="${x}"><b>${({balanced:'均衡',swift:'迅捷',guard:'守勢'}[x])}　·　預計生命 ${pre.remaining}/${pre.initial}</b><small>${desc} · 預計${pre.win?'勝利':'敗北'}</small></button>`}).join('');
  const p=previewBattle(state,plan),ag=state.player.stats.agility;
@@ -362,7 +380,7 @@ $('menuBtn').addEventListener('click',timeModal);$('travelBtn').addEventListener
 for(const t of document.querySelectorAll('[data-tab]'))t.addEventListener('click',()=>setTab(t.dataset.tab));
 for(const m of document.querySelectorAll('[data-mobile]'))m.addEventListener('click',()=>{if(m.dataset.mobile==='map')closeSheet();else setTab(m.dataset.mobile)});
 const stick=$('joystick'),track=$('joyTrack'),knob=$('joyKnob');
-document.documentElement.dataset.build='v2.6.1';
+document.documentElement.dataset.build='v2.7';
 let joystickVector={x:0,y:0},joystickPointer=null;
 function setStick(e){
  const r=track.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;
